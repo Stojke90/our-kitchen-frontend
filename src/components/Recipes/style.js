@@ -59,12 +59,12 @@ export const paginationStyle = {
   justifyContent: "center",
   alignItems: "center",
   margin: "2.5rem auto",
-  "&.css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root": {
+  "& .css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root": {
     border: "3px solid #ff4500",
     background: "#ffffff9e",
     ":hover": { color: "#ff4500" },
   },
-  "&.css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected": {
+  "& .css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected": {
     color: "#ff4500",
     border: "3px solid #ff4500",
     backgroundColor: "#000000a8",
