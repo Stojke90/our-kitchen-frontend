@@ -1,5 +1,5 @@
 This is an application that deals with loading your culinary recipes. We can look at this application as our small community where we will share our culinary recipes, as well as give a rating for each recipe, if you are a registered user of our application.
-The application has its own database where you can store your culinary recipes.
+The application has its own database where you can store your culinary recipes.You can view the codes for the backend in the repository by name our-kitchen-backend.
 
 The following programming languages ​​and libraries are used in the application : React.js,JavaScript es6+,Node.js,mongoose,MoongoDb,dotenv,express,Redux-toolkit,React-hook-form,React-router,axios,env-cmd and Materila-UI.
 
