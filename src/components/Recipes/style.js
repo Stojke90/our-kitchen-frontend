@@ -59,7 +59,7 @@ export const paginationStyle = {
   justifyContent: "center",
   alignItems: "center",
   margin: "2.5rem auto",
-  "& .MuiButtonBase-root-MuiPaginationItem-root": {
+  "& .MuiPaginationItem-root": {
     border: "3px solid #ff4500",
     background: "#ffffff9e",
     ":hover": { color: "#ff4500" },
