@@ -3,14 +3,14 @@ import kitchen from "../../images/recipeKitchen.jpg";
 export const inputStyle = {
   background: "#00000029",
   margin: "0.5rem",
-  ".css-1d3z3hw-MuiOutlinedInput-notchedOutline": {
+  "& .MuiOutlinedInput-notchedOutline": {
     borderWidth: "2px ",
     borderColor: "black",
   },
-  ".css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root": {
+  "& .MuiFormLabel-root-MuiInputLabel-root": {
     color: "black",
   },
-  ".css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input": { color: "#fff" },
+  "& .MuiInputBase-input-MuiOutlinedInput-input": { color: "#fff" },
 };
 
 export const recipesCon = {
@@ -64,7 +64,7 @@ export const paginationStyle = {
     background: "#ffffff9e",
     ":hover": { color: "#ff4500" },
   },
-  "& .MuiButtonBase-root-MuiPaginationItem-root .Mui-selected": {
+  "& .Mui-selected": {
     color: "#ff4500",
     border: "3px solid #ff4500",
     backgroundColor: "#000000a8",
