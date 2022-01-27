@@ -107,22 +107,14 @@ export const useStyles = makeStyles({
   },
   "@media (min-width: 900px)": {
     user_background: {
-      background: "linear-gradient(159deg, black, transparent)",
+      background: "linear-gradient(159deg, black, #a91e1ec7)",
       minHeight: "100vh",
       padding: "0.4rem",
       display: "flex",
       flexDirection: "column",
     },
   },
-  "@media (max-width: 899px)": {
-    user_background2: {
-      backgroundColor: "black",
-      padding: "0.4rem",
-      minHeight: "100vh",
-      display: "flex",
-      flexDirection: "column",
-    },
-  },
+
   nothing: {},
 });
 

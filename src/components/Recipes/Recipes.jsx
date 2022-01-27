@@ -54,6 +54,7 @@ const Recipes = () => {
   // fun for filter search by recipe name
   const searchRecipeByName = (e) => {
     setSearch({ ...search, recipe: e.target.value });
+    setPage(1);
     e.target.value.length >= 3
       ? setAllRecipes(
           allRecipes.filter(
@@ -69,6 +70,7 @@ const Recipes = () => {
   // fun for filter search by cook name recipes
   const searchRecipeByCookName = (e) => {
     setSearch({ ...search, cook: e.target.value });
+    setPage(1);
     e.target.value.length >= 3
       ? setAllRecipes(
           allRecipes.filter(
@@ -171,7 +173,8 @@ const Recipes = () => {
           <SkeletonLoader />
         )}
       </Grid>
-      {allRecipes.length > (window.innerWidth < 607 ? 8 : 12) && (
+
+      {allRecipes.length > 0 && (
         <Pagination
           count={numberOfCards()}
           page={page}

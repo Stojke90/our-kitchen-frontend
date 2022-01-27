@@ -29,3 +29,17 @@ export const conForCards = {
   flexWrap: "wrap",
   justifyContent: "space-around",
 };
+
+export const noRecipes = {
+  minHeight: "50vh",
+  marginTop: "10rem",
+  color: "#fff",
+  fontSize: "2rem",
+  margin: "auto",
+  textShadow: "0 0 9px #000000",
+  textAlign: "center",
+  "@media (max-width: 730px)": {
+    fontSize: "1.5rem",
+    marginTop: "10rem",
+  },
+};

@@ -14,9 +14,12 @@ import {
   ForbiddenRoute,
   RecipeDetails,
   CookPage,
+  Footer,
+  ScrollToTop,
+  ErrorPage,
 } from "./importComponents";
 import { useLocation } from "react-router";
-import { Grid, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import { useSelector } from "react-redux";
 
 const App = () => {
@@ -24,21 +27,11 @@ const App = () => {
   const location = useLocation();
   // state for user(cook),data of user if user is logged-in
   const user = useSelector((state) => state.user.value);
-  //css style for footer
-  const footerStyle = {
-    backgroundColor: "#000",
-    color: "#fff",
-    width: "100%",
-    borderTop: "solid 1px #ffffff80",
-    boxShadow: "0px -4px 19px 4px #ffffffba",
-    "@media (max-width: 500px)": {
-      fontSize: "1rem",
-    },
-  };
 
   return (
     <>
       <Grid container>
+        <ScrollToTop />
         {location.pathname === "/" ? <></> : <LinksName />}
         <Switch>
           <Route exact path="/" component={NavBar} />
@@ -69,19 +62,10 @@ const App = () => {
             path="/ForbiddenRoute"
             component={ForbiddenRoute}
           />
+          <Route exact path="*" component={ErrorPage} />
         </Switch>
-        {location.pathname !== "/" && (
-          <Typography
-            p={2}
-            align="center"
-            variant="h5"
-            component="div"
-            sx={footerStyle}
-          >
-            Terms of use | Privacy Enviromental Policy Copyright © 2021{" "}
-            {document.title} All rights reserved.
-          </Typography>
-        )}
+
+        {location.pathname !== "/" && <Footer />}
       </Grid>
     </>
   );

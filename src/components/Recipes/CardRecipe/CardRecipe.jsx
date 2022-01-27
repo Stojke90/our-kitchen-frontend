@@ -23,6 +23,7 @@ const CardRecipe = ({ recipe }) => {
     boxShadow: "9px 14px 8px 5px #0000004a",
     border: "solid 1px #0000002b",
     backgroundColor: "#ffffff7d",
+    backdropFilter: "blur(4px)",
     transition: "all 1s",
     "&:hover": {
       boxShadow: "3px 5px 5px 3px #0000004a",

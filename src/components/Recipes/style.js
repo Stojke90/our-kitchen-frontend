@@ -2,7 +2,7 @@ import kitchen from "../../images/recipeKitchen.jpg";
 // css style for input
 export const inputStyle = {
   background: "#00000029",
-  m: 1,
+  margin: "0.5rem",
   ".css-1d3z3hw-MuiOutlinedInput-notchedOutline": {
     borderWidth: "2px ",
     borderColor: "black",
@@ -59,12 +59,12 @@ export const paginationStyle = {
   justifyContent: "center",
   alignItems: "center",
   margin: "2.5rem auto",
-  ".css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root": {
+  "&.css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root": {
     border: "3px solid #ff4500",
     background: "#ffffff9e",
     ":hover": { color: "#ff4500" },
   },
-  ".css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected": {
+  "&.css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected": {
     color: "#ff4500",
     border: "3px solid #ff4500",
     backgroundColor: "#000000a8",

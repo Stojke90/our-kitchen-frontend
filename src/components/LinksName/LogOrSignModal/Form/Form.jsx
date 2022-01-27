@@ -12,9 +12,9 @@ import axios from "axios";
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import Avatar from "../../../../images/cookAvatar.jpg";
-import hide from "../../../../images/hide.jpg";
+import hide from "../../../../images/hide.png";
 import loader from "../../../../images/loader.webp";
-import show from "../../../../images/show.jpg";
+import show from "../../../../images/show.png";
 import useStyles from "./style";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -83,7 +83,7 @@ const Form = () => {
               setTimeout(() => {
                 dispatch(closeModal());
                 setExist("");
-              }, 8000);
+              }, 4000);
             } else if (res.status === 204) {
               setExist("There is no Cook by this data");
             }

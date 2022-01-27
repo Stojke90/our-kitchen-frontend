@@ -10,7 +10,9 @@ import ProtectedRoutes from "./components/ProtectedRoutes/ProtectedRoutes";
 import ForbiddenRoute from "./components/ForbiddenRoute/ForbiddenRoute";
 import RecipeDetails from "./components/RecipeDetails/RecipeDetails";
 import CookPage from "./components/CookPage/CookPage";
-
+import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 export {
   NavBar,
   LinksName,
@@ -24,4 +26,7 @@ export {
   ForbiddenRoute,
   RecipeDetails,
   CookPage,
+  Footer,
+  ScrollToTop,
+  ErrorPage,
 };
