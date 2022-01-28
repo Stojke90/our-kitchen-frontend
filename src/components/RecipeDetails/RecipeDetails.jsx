@@ -54,6 +54,10 @@ const RecipeDetails = (props) => {
       from: { color: "#fff" },
       to: { color: "red" },
     },
+    "@media (max-width: 900px)": {
+      minHeight: "80vh",
+      lineHeight: "80vh",
+    },
   };
 
   // css for recipe conteiner

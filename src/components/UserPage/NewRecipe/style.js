@@ -7,7 +7,7 @@ export const center = {
 };
 
 export const blueColor = {
-  ".css-1x51dt5-MuiInputBase-input-MuiInput-input": {
+  "& .MuiInputBase-input.MuiInput-input": {
     color: "#0255ee",
   },
 };

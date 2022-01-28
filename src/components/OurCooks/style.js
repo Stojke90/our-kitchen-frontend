@@ -18,7 +18,7 @@ export const inputCon = {
 };
 
 export const input = {
-  ".css-mps6pm-MuiInputBase-input-MuiFilledInput-input": {
+  "& .MuiFilledInput-input": {
     color: "white !important",
   },
 };
@@ -42,14 +42,15 @@ export const pagination = {
   justifyContent: "center",
   alignItems: "center",
   margin: "2.5rem auto",
-  ".css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root": {
+  "& .MuiPaginationItem-root": {
     border: "3px solid #ff4500",
     background: "#ffffff9e",
+    "& :hover": { color: "#ff4500" },
   },
-  ".css-1ysyrvn-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected": {
-    color: "#ff4500",
-    border: "3px solid #ff4500",
-    backgroundColor: "#000000a8",
+  "& .MuiPaginationItem-root.Mui-selected": {
+    color: "#ff4500 !important",
+    border: "3px solid #ff4500 !important",
+    backgroundColor: "#000000a8 !important",
   },
 };
 

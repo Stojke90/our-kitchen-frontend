@@ -23,7 +23,7 @@ export const cardCon = {
 export const cardHeader = {
   textAlign: "center",
   ".css-nrdprl-MuiTypography-root": {
-    color: "#fff ",
+    color: "#fff !important",
   },
 };
 
