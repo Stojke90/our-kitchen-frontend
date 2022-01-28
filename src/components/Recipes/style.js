@@ -10,7 +10,10 @@ export const inputStyle = {
   "& .MuiFormLabel-root-MuiInputLabel-root": {
     color: "black",
   },
-  "& .MuiInputBase-input-MuiOutlinedInput-input": { color: "#fff" },
+  "& .MuiInputBase-input.MuiOutlinedInput-input": {
+    color: "#fff",
+    backdropFilter: "blur(3px)",
+  },
 };
 
 export const recipesCon = {
