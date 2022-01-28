@@ -62,11 +62,11 @@ export const paginationStyle = {
   "& .MuiPaginationItem-root": {
     border: "3px solid #ff4500",
     background: "#ffffff9e",
-    ":hover": { color: "#ff4500" },
+    "& :hover": { color: "#ff4500" },
   },
-  "& .Mui-selected": {
-    color: "#ff4500",
-    border: "3px solid #ff4500",
-    backgroundColor: "#000000a8",
+  "& .MuiPaginationItem-root.Mui-selected": {
+    color: "#ff4500 !important",
+    border: "3px solid #ff4500 !important",
+    backgroundColor: "#000000a8 !important",
   },
 };
